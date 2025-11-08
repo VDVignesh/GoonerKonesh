@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy You</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    body {
+      margin: 0;
+      text-align: center;
+      font-family: 'Press Start 2P', cursive;
+      user-select: none;
+    }
+
+    header {
+      margin: 0 auto;
+      width: 431px;
+    }
+
+    h1 {
+      background: url("https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png") 0% 340px;
+      padding: 1.2rem 0;
+      margin: 0;
+    }
+
+    .score-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 6px;
+      background: #5EE270;
+    }
+
+    #difficultySelect {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    label {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gooner Konesh</h1>
+    <div class="score-container">
+      <div id="bestScore"></div>
+      <div id="currentScore"></div>
+    </div>
+  </header>
+
+  <canvas id="canvas" width="431" height="500"></canvas>
+
+  <script src="apphard.js"></script>
+</body>
+</html>
